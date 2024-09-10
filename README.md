@@ -1,17 +1,30 @@
 # Alphabet Tile Interaction
 
-Develop a React application that displays a grid of tiles, each representing a letter of the alphabet in uppercase format. Implement the following functionality:
+## Description
 
-1. Tile Rendering: Render a tile for each letter of the alphabet (A to Z) within a container or grid layout.
-2. Click Interaction: When a tile is clicked, append the corresponding letter to a string displayed in an HTML element with the ID outputString.
-3. Consecutive Letter Replacement: If three consecutive letters in the outputString are the same, replace them with an underscore (-). For example, if the user clicks "A",
-   "B", "C", "F", "F", "F", "G" in that order, the outputString should display "ABC_G".
-4. Multiple Consecutive Letters: If more than three consecutive letters are the same, replace them with the appropriate number of underscores. For instance, if the user clicks
-   "A" six times followed by "B", the outputString should display "\_B".
-5. Validation: Your solution will be validated by our system, so make sure it meets the specified requirements.
+The **Alphabet Tile Interaction** is a React-based application that displays a grid of alphabet tiles (A-Z). Each tile can be clicked, and the corresponding letter is appended to an output string. If three or more consecutive letters in the output string are the same, they are replaced with an underscore (`_`). The application provides a simple yet interactive experience for handling consecutive letter replacements based on user input.
 
-   Example Output:
+## Features
 
-- Initial state: outputString is empty.
-- After dicking "A", "B", "C", "F", "F", "F", "G": outputString displays "ABC_G".
-- After clicking "A" six times followed by "B": outputString displays "\_\_B".
+1. **Alphabet Tile Rendering**: A grid of tiles from A to Z is rendered.
+2. **Click Interaction**: Clicking a tile appends its letter to an output string.
+3. **Consecutive Letter Replacement**: If three or more consecutive letters in the output string are the same, they are replaced with an underscore.
+4. **Multiple Consecutive Letter Handling**: For more than three consecutive identical letters, the appropriate number of underscores is used.
+
+## Example Output
+
+1. After clicking the tiles `A`, `B`, `C`, `F`, `F`, `F`, `G`, the `outputString` will display: `ABC_G`.
+2. After clicking the tile `A` six times followed by `B`, the `outputString` will display: `__B`.
+
+## Technologies Used
+
+- **React.js**: Used to build the interactive UI components.
+- **CSS Grid**: Used to layout the alphabet tiles.
+
+## Installation & Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/alphabet-tile-interaction.git
+   cd alphabet-tile-interaction
+   ```
